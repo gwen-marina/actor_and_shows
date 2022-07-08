@@ -1,6 +1,8 @@
 <h1>Actors</h1>
 <% @actors.each do |actor| %>
   <h3><%= actor.name %></h3>
-  <p>Main Actor: <%= actor.main_actor %></p>
-  <p>Episodes Appeared In: <%= actor.episodes_appeared_in %></p>
+  <p>Still Active: <%= actor.still_active %></p>
+  <p>Age: <%= actor.age %></p>
 <% end %>
+
+

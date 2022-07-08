@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_07_222023) do
+ActiveRecord::Schema.define(version: 2022_07_08_002947) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "actors", force: :cascade do |t|
     t.string "name"
-    t.boolean "main_actor"
-    t.integer "episodes_appeared_in"
+    t.boolean "still_active"
+    t.integer "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
