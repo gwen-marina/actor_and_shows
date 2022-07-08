@@ -4,3 +4,4 @@ class ActorsController < ApplicationController
    @actors = Actor.all
   end
 end
+
