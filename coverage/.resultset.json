@@ -266,9 +266,12 @@
           1,
           1,
           1,
+          1,
           null,
           1,
           null,
+          1,
+          1,
           1,
           1,
           null,
@@ -320,10 +323,33 @@
           null
         ]
       },
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/spec/models/actors/actor_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -387,6 +413,6 @@
         ]
       }
     },
-    "timestamp": 1657387885
+    "timestamp": 1657393647
   }
 }
