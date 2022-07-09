@@ -248,6 +248,7 @@
           1,
           1,
           1,
+          null,
           null
         ]
       },
@@ -257,30 +258,22 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/tv_shows_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/tv_show.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -300,28 +293,36 @@
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/tv_show.rb": {
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/actor_tv_shows_controller.rb": {
+        "lines": [
+          1,
           null,
           1,
           1,
-          null,
-          null,
-          1,
-          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1657398603
+    "timestamp": 1657406665
   }
 }

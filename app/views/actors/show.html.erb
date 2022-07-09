@@ -2,4 +2,5 @@
   <p>Still Active: <%= @actor.still_active %></p>
   <p>Age: <%= @actor.age %></p>
   <p>Number of TV Shows: <%= @actor.tv_show_count%></p>
+  <p><%= link_to "#{@actor.name}'s TV Shows", "/actors/#{@actor.id}/tvshows" %></p>
  
