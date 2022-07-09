@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_08_002947) do
+ActiveRecord::Schema.define(version: 2022_07_09_020419) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,4 +23,15 @@ ActiveRecord::Schema.define(version: 2022_07_08_002947) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tv_shows", force: :cascade do |t|
+    t.string "name"
+    t.boolean "on_air"
+    t.integer "number_of_episodes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "actor_id"
+    t.index ["actor_id"], name: "index_tv_shows_on_actor_id"
+  end
+
+  add_foreign_key "tv_shows", "actors"
 end
