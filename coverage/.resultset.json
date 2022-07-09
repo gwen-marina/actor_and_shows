@@ -246,32 +246,12 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/helpers/application_helper.rb": {
         "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/spec/features/tv_shows/show_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
           1,
           null
         ]
@@ -310,29 +290,8 @@
           1,
           null
         ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/tv_show.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/tv_shows_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1657336099
+    "timestamp": 1657337264
   }
 }

@@ -12,7 +12,7 @@ RSpec.describe 'the actors show page' do
     expect(page).to have_content(actor_2.name)  
   end
 
-  it 'can show an actor and their attributes' do 
+  it 'can show a specific actor and their attributes' do 
     actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
     actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
 
