@@ -19,4 +19,11 @@ RSpec.describe 'actor index', type: :feature do
     expect(page).to have_content(tv_show_2.number_of_episodes)
     expect(page).to_not have_content(tv_show_3.name)
   end
+
+  it 'has link to tvshows index' do
+    visit "/actors"
+    expect(page).to have_link('TV Shows')
+    click_link 'TV Shows'
+    expect(current_path).to eq("/tvshows")
+  end
 end
