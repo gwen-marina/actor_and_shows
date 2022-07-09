@@ -257,105 +257,22 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/spec/features/actors/show_spec.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/tv_shows_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
           1,
           null,
           null,
           1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
+          0,
           null,
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/spec/features/tv_shows/show_spec.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/application_controller.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/spec/models/actors/actor_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/application_record.rb": {
-        "lines": [
-          1,
           1,
           null
         ]
@@ -367,18 +284,9 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/actor_tv_shows_controller.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/application_record.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/application_controller.rb": {
-        "lines": [
           1,
           null
         ]
@@ -392,27 +300,28 @@
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/tv_shows_controller.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
         "lines": [
           1,
-          null,
-          1,
           1,
           null,
+          1,
+          1,
+          null,
           null,
           1,
-          1,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1657393647
+    "timestamp": 1657398603
   }
 }

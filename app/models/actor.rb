@@ -4,4 +4,8 @@ class Actor < ApplicationRecord
   def self.sort_by_newest
     order(created_at: :desc)  
   end
+
+  def tv_show_count
+     tv_shows.count
+  end
 end
