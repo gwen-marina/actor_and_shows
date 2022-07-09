@@ -1,0 +1,7 @@
+<h1>TV Shows</h1>
+<% @actors_shows.each do |show| %>
+  <h3><%= show.name %></h3>
+  <p>On Air: <%= show.on_air %></p>
+  <p>Number of Episodes: <%= show.number_of_episodes %></p>
+<% end %>
+
