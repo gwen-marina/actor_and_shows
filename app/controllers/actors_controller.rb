@@ -1,7 +1,7 @@
 class ActorsController < ApplicationController
 
   def index 
-    @actors = Actor.all
+    @actors = Actor.sort_by_newest
   end
 
   def show 

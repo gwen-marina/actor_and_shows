@@ -1,15 +1,18 @@
 require 'rails_helper'
 
-RSpec.describe 'the actors show page', type: :feature do 
+RSpec.describe 'actors show page', type: :feature do 
 
   it 'shows the name of all the actors' do
     actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    sleep(1)
     actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
 
     visit '/actors'
 
     expect(page).to have_content(actor_1.name)
-    expect(page).to have_content(actor_2.name)  
+    expect(page).to have_content(actor_2.name)
+    expect(page).to have_content(actor_1.created_at)
+    expect(page).to have_content(actor_2.created_at)
   end
 
   it 'can show a specific actor and their attributes' do 
