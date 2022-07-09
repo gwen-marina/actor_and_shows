@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'the actors show page' do 
+RSpec.describe 'the actors show page', type: :feature do 
 
   it 'shows the name of all the actors' do
     actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)

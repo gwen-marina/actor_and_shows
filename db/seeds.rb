@@ -9,11 +9,9 @@
 TvShow.destroy_all
 Actor.destroy_all
 
-# tv_show_1 = TvShow.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
-# tv_show_2 = TvShow.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
-
 actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
 actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
 
 actor_2.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
 actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
