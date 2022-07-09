@@ -8,4 +8,8 @@ class Actor < ApplicationRecord
   def tv_show_count
      tv_shows.count
   end
+
+  def actor_tv_shows 
+    
+  end
 end
