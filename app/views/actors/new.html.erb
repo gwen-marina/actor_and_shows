@@ -1,0 +1,13 @@
+<%= form_with url: '/actors', method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :still_active %>
+  <%= form.text_field :still_active %>
+
+  <%= form.label :age %>
+  <%= form.text_field :age %>
+
+  <%= form.submit "Create Actor" %>
+<% end %>
+

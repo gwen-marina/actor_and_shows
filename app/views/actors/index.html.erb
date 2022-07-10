@@ -1,4 +1,5 @@
 <h1>Actors</h1>
+<%= link_to 'New Actor', '/actors/new' %>
 <% @actors.each do |actor| %>
   <h3><%= actor.name %></h3>
   <p>Still Active: <%= actor.still_active %></p>
