@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get '/actors/:id/edit', to: 'actors#edit'
   patch '/actors/:id', to: 'actors#update'
   get '/actors/:id', to: 'actors#show'
+  get '/actors/:id/tvshows/new', to: 'actor_tv_shows#new'
+  post '/actors/:id/tvshows', to: 'actor_tv_shows#create'
 end

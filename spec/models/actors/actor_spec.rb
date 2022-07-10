@@ -6,26 +6,30 @@ RSpec.describe Actor, type: :model do
     it {should have_many :tv_shows}
   end
 
-  it 'shows most recent actor and when created' do
-    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
-    sleep(1)
-    actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
+  describe 'class methods' do
+    it 'shows most recent actor and when created' do
+      actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+      sleep(1)
+      actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
    
-    actors = Actor.sort_by_newest
+      actors = Actor.sort_by_newest
     
-    expect(actors[0]).to eq(actor_2)
-    expect(actors[1]).to eq(actor_1)
+      expect(actors[0]).to eq(actor_2)
+      expect(actors[1]).to eq(actor_1)
+    end
   end
 
-  it 'shows a tv_show count for each actor' do 
-    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
-    actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
+  describe 'instance methods' do
+    it 'shows a tv_show count for each actor' do 
+      actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+      actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
 
-    actor_2.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
-    actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
-    actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+      actor_2.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
+      actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+      actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
 
-    expect(actor_1.tv_show_count).to eq(2)
-    expect(actor_2.tv_show_count).to eq(1)
+      expect(actor_1.tv_show_count).to eq(2)
+      expect(actor_2.tv_show_count).to eq(1)
+    end
   end
 end

@@ -15,6 +15,17 @@ RSpec.describe 'actors show page', type: :feature do
     expect(page).to have_content(actor_2.created_at)
   end
 
+  it 'shows the count of tv_shows an actor has' do 
+    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+    actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+
+    visit "/actors/#{actor_1.id}"
+
+    expect(page).to have_content(actor_1.name)
+    expect(page).to have_content(actor_1.tv_show_count)
+  end
+
   it 'can show a specific actor and their attributes' do 
     actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
     actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
