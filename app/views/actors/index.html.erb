@@ -1,7 +1,7 @@
 <h1>Actors</h1>
 <%= link_to 'New Actor', '/actors/new' %>
 <% @actors.each do |actor| %>
-  <h3><%= actor.name %></h3>
+  <h3><%= actor.name %></h3> <%= button_to "Edit #{actor.name}", "/actors/#{actor.id}/edit", method: :get %>
   <p>Still Active: <%= actor.still_active %></p>
   <p>Age: <%= actor.age %></p>
   <p>Created At: <%= actor.created_at %></p>

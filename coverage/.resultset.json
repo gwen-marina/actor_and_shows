@@ -250,12 +250,47 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
       "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/spec/features/actors/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -421,11 +456,11 @@
           1,
           null,
           1,
-          6,
+          8,
           null,
           null,
           1,
-          4,
+          5,
           null,
           null,
           1,
@@ -462,12 +497,39 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/actor_tv_shows_controller.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/actors_controller.rb": {
         "lines": [
           1,
           null,
           1,
+          7,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
           2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
           null,
           null
         ]
@@ -478,29 +540,12 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/actors_controller.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/controllers/actor_tv_shows_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          5,
-          null,
-          null,
-          1,
           2,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
           null,
           null
         ]
@@ -520,6 +565,6 @@
         ]
       }
     },
-    "timestamp": 1657421653
+    "timestamp": 1657424255
   }
 }
