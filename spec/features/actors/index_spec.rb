@@ -20,10 +20,40 @@ RSpec.describe 'actor index', type: :feature do
     expect(page).to_not have_content(tv_show_3.name)
   end
 
-  it 'has link to tvshows index' do
+  it 'has link to tvshows index at top of page' do
     visit "/actors"
     expect(page).to have_link('TV Shows')
     click_link 'TV Shows'
     expect(current_path).to eq("/tvshows")
+  end 
+
+  it 'has a link to create a tv show from the actors tv shows index page' do 
+    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
+    tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+    tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+    tv_show_3 = actor_2.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
+
+    visit "/actors/#{actor_1.id}/tvshows"
+
+    click_link ('Create TV Show')
+    expect(current_path).to eq("/actors/#{actor_1.id}/tvshows/new")
   end
+
+  it 'can create a new tv show' do 
+    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+    tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+
+    visit "/actors/#{actor_1.id}/tvshows/new"
+
+    fill_in('name', with: 'Curb Your Enthusiasm')
+    fill_in('on_air', with: 'True')
+    fill_in('number_of_episodes', with: '110')
+    click_button('Create TV Show')
+
+    expect(current_path).to eq("/actors/#{actor_1.id}/tvshows")
+    expect(page).to have_content('Curb Your Enthusiasm')
+  end  
+
 end

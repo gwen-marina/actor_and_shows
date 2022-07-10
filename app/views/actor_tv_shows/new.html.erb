@@ -1,0 +1,13 @@
+<%= form_with url: "/actors/#{@id}/tvshows", method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :on_air %>
+  <%= form.text_field :on_air %>
+
+  <%= form.label :number_of_episodes %>
+  <%= form.text_field :number_of_episodes %>
+
+  <%= form.submit "Create TV Shows" %>
+<% end %>
+
