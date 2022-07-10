@@ -12,8 +12,12 @@ class ActorsController < ApplicationController
   end
 
   def create 
-    Actor.create(name: params[:name], still_active: params[:still_active], age: params[:age])
+    Actor.create(actor_params)
     redirect_to '/actors'
+  end
+
+  def actor_params 
+    params.permit(:name, :still_active, :age)
   end
 end
 
