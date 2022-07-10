@@ -17,8 +17,7 @@ RSpec.describe 'the Actor creation' do
     fill_in('age', with: '48')
     click_button('Create Actor')
 
-    new_actor_id = Actor.last.id
-    expect(current_path).to eq("/actors/#{new_actor_id}")
+    expect(current_path).to eq('/actors')
     expect(page).to have_content('Rhea Seehorn')
   end
 end
