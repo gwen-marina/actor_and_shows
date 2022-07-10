@@ -5,7 +5,7 @@ RSpec.describe 'the actor edit' do
   it 'links to the edit page' do 
     actor = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
 
-    visit '/actors'
+    visit "/actors/#{actor.id}"
    
     click_button "Edit #{actor.name}" 
 
@@ -15,7 +15,7 @@ RSpec.describe 'the actor edit' do
   it 'can edit the actor' do 
     actor = Actor.create!(name: "Bob Odenkir", still_active: true, age: 59)
 
-    visit '/actors'
+    visit "/actors/#{actor.id}"
 
     expect(page).to have_content('Bob Odenkir')
     
