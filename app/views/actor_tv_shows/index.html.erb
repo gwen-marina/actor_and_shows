@@ -1,11 +1,14 @@
 <h1>TV Shows</h1>
 <h3><%= @actor.name %></h3>
-<%= link_to 'Create TV Show', "/actors/#{@actor.id}/tvshows/new" %>
-<% @actor.tv_shows.each do |show| %>
+<p><%= link_to 'Sort By Alphabetical Order', "/actors/#{@actor.id}/tvshows?alpha=yes" %></p>
+<p><%= link_to 'Create TV Show', "/actors/#{@actor.id}/tvshows/new" %></p>
+<% @tv_shows.each do |show| %>
   <h3><%= show.name %></h3>
   <p>On Air: <%= show.on_air %></p>
   <p>Number of Episodes: <%= show.number_of_episodes %></p>
 <% end %>
+
+
 
 
 

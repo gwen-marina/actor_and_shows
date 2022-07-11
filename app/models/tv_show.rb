@@ -5,5 +5,7 @@ class TvShow < ApplicationRecord
     where(on_air: true) 
   end
 
-
+  def self.alphabetical_order 
+    order(name: :asc)
+  end
 end

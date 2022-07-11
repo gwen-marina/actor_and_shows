@@ -2,6 +2,11 @@ class ActorTvShowsController < ApplicationController
 
   def index 
     @actor = Actor.find(params[:id])
+    if params[:alpha] == "yes"
+      @tv_shows = @actor.tv_shows.alphabetical_order
+    else
+      @tv_shows = @actor.tv_shows
+    end    
   end
 
   def new
