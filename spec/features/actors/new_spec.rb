@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'the Actor creation' do
+RSpec.describe 'the Actor creation', type: :feature do
 
   it 'links to the new page from the actor index' do 
     visit '/actors'

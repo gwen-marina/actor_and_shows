@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+  Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   get '/actors', to: 'actors#index'
@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   get '/actors/:id', to: 'actors#show'
   get '/actors/:id/tvshows/new', to: 'actor_tv_shows#new'
   post '/actors/:id/tvshows', to: 'actor_tv_shows#create'
+  get '/tvshows/:id/edit', to: 'tv_shows#edit'
+  patch 'tvshows/:id', to: 'tv_shows#update'
 end
