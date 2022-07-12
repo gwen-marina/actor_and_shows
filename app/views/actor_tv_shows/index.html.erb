@@ -10,6 +10,13 @@
   <p><%= link_to "Delete #{show.name}", "/tvshows/#{show.id}", id: "show-#{show.id}", method: :delete %></p> 
 <% end %>
 
+<%= form_with url: "/actors/#{@actor.id}/tvshows", method: :get, local: true do |form| %>
+  <%= form.label :number %>
+  <%= form.text_field :number %>
+
+  <%= form.submit 'Only return TV Shows with more than x number of episodes' %>
+<% end %>
+
 
 
 

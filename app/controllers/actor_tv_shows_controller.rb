@@ -4,6 +4,8 @@ class ActorTvShowsController < ApplicationController
     @actor = Actor.find(params[:id])
     if params[:alpha] == "yes"
       @tv_shows = @actor.tv_shows.alphabetical_order
+    elsif params[:number]
+      @tv_shows = @actor.tv_shows.greater_than_number(params[:number])
     else
       @tv_shows = @actor.tv_shows
     end    
