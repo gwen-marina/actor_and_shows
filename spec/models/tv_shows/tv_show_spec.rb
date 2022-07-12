@@ -6,6 +6,14 @@ RSpec.describe TvShow, type: :model do
     it {should belong_to :actor}
   end
 
+  describe 'validations' do
+    it { should validate_presence_of :name }
+    it { should validate_presence_of :number_of_episodes}
+    it { should allow_value(true).for :on_air}
+    it { should allow_value(false).for :on_air}
+    it { should_not allow_value(nil).for :on_air}
+  end
+
   describe 'class methods' do
     it 'only shows on_air tv shows' do
       TvShow.destroy_all
