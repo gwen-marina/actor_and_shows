@@ -5,7 +5,8 @@
   <p>Still Active: <%= actor.still_active %></p>
   <p>Age: <%= actor.age %></p>
   <p>Created At: <%= actor.created_at %></p>
-  <p><%= link_to "Edit #{actor.name}", "/actors/#{actor.id}/edit", id: "actor-#{actor.id}" %></p>  
+  <p><%= link_to "Edit #{actor.name}", "/actors/#{actor.id}/edit", id: "actor-#{actor.id}" %></p> 
+  <p><%= link_to "Delete #{actor.name}", "/actors/#{actor.id}", id: "actor-#{actor.id}", method: :delete %></p> 
 <% end %>
 
 
