@@ -28,6 +28,8 @@ RSpec.describe 'tv show index', type: :feature do
   end
 
   it 'has a link for every tv show to edit the information' do 
+    TvShow.destroy_all 
+    Actor.destroy_all
     actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
     actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
     tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
@@ -36,7 +38,8 @@ RSpec.describe 'tv show index', type: :feature do
 
     visit '/tvshows'
 
-    click_on(id: "show-#{tv_show_2.id}")
+    click_link("Edit #{tv_show_2.name}")
+
     expect(current_path).to eq("/tvshows/#{tv_show_2.id}/edit")
   end
 end

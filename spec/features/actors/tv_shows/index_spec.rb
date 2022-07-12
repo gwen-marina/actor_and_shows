@@ -28,7 +28,7 @@ it 'can create a new tv show' do
 
     visit "/actors/#{actor_2.id}/tvshows"
 
-    click_on(id: "show-#{tv_show_3.id}")
+    click_link("Edit #{tv_show_3.name}")
 
     expect(current_path).to eq("/tvshows/#{tv_show_3.id}/edit")
   end
