@@ -2,3 +2,4 @@
   <p>On Air: <%= @tv_show.on_air %></p>
   <p>Number of Episodes: <%= @tv_show.number_of_episodes %></p>
   <p><%= link_to "Edit #{@tv_show.name}", "/tvshows/#{@tv_show.id}/edit" %></p>
+  <p><%= link_to "Delete #{@tv_show.name}", "/tvshows/#{@tv_show.id}", method: :delete %></p>

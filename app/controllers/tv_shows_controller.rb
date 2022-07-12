@@ -18,6 +18,13 @@ class TvShowsController < ApplicationController
     redirect_to "/tvshows/#{tv_show.id}"
   end
 
+  def destroy 
+    tv_show = TvShow.find(params[:id])
+    tv_show.destroy
+    redirect_to '/tvshows'
+  end
+
+private
   def tv_show_params 
     params.permit(:name, :on_air, :number_of_episodes)
   end

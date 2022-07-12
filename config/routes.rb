@@ -15,4 +15,5 @@
   get '/tvshows/:id/edit', to: 'tv_shows#edit'
   patch 'tvshows/:id', to: 'tv_shows#update'
   delete 'actors/:id', to: 'actors#destroy'
+  delete 'tvshows/:id', to: 'tv_shows#destroy'
 end
