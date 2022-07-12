@@ -1,5 +1,6 @@
 class Actor < ApplicationRecord 
   has_many :tv_shows
+  has_many :tv_shows,  dependent: :destroy 
 
   def self.sort_by_newest
     order(created_at: :desc)  

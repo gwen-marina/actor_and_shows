@@ -1,5 +1,6 @@
 <h1><%= @actor.name %></h1>
   <p><%= link_to "Edit #{@actor.name}", "/actors/#{@actor.id}/edit" %></p>
+  <p><%= link_to "Delete #{@actor.name}", "/actors/#{@actor.id}", method: :delete %></p>
   <p>Still Active: <%= @actor.still_active %></p>
   <p>Age: <%= @actor.age %></p>
   <p>Number of TV Shows: <%= @actor.tv_show_count%></p>
