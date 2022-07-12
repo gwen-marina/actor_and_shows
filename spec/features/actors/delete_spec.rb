@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'delete an actor' do 
+RSpec.describe 'delete an actor', type: :feature do 
   
   it 'has a link to delete an actor on their show page and all actors shows and redirects to actor index' do 
     TvShow.destroy_all

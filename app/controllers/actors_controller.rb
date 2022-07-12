@@ -21,7 +21,7 @@ class ActorsController < ApplicationController
   end
 
   def update 
-    actor = Actor.find(params[:id])
+    actor = Actor.find(params[:id])  
     actor.update(actor_params)
     redirect_to "/actors/#{actor.id}"
   end

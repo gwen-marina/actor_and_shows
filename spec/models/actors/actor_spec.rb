@@ -6,6 +6,14 @@ RSpec.describe Actor, type: :model do
     it {should have_many :tv_shows}
   end
 
+   describe 'validations' do
+    it { should validate_presence_of :name }
+    it { should validate_presence_of :age}
+    it { should allow_value(true).for :still_active}
+    it { should allow_value(false).for :still_active}
+    it { should_not allow_value(nil).for :still_active}
+  end
+
   describe 'class methods' do
     it 'shows most recent actor and when created' do
       actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)

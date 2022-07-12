@@ -1,12 +1,12 @@
 <%= form_with url: "/actors/#{@actor.id}", method: :patch, local: true do |form| %>
   <%= form.label :name %>
-  <%= form.text_field :name %>
+  <%= form.text_field :name, value: @actor.name %>
 
   <%= form.label :still_active %>
-  <%= form.text_field :still_active %>
+  <%= form.text_field :still_active, value: @actor.still_active %>
 
   <%= form.label :age %>
-  <%= form.text_field :age %>
+  <%= form.text_field :age, value: @actor.age %>
 
   <%= form.submit "Update Actor" %>
 <% end %>
