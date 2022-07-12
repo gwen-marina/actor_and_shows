@@ -3,4 +3,5 @@
   <h3><%= show.name %></h3>
   <p>On Air: <%= show.on_air %></p>
   <p>Number of Episodes: <%= show.number_of_episodes %></p>
+  <p><%= link_to "Edit #{show.name}", "/tvshows/#{show.id}/edit", id: "show-#{show.id}" %> </p>
 <% end %>
