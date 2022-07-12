@@ -26,6 +26,14 @@ class ActorsController < ApplicationController
     redirect_to "/actors/#{actor.id}"
   end
 
+  def destroy 
+    actor = Actor.find(params[:id])
+    actor.tv_shows
+    actor.destroy
+    redirect_to '/actors'
+  end
+
+private
   def actor_params 
     params.permit(:name, :still_active, :age)
   end

@@ -14,4 +14,5 @@
   post '/actors/:id/tvshows', to: 'actor_tv_shows#create'
   get '/tvshows/:id/edit', to: 'tv_shows#edit'
   patch 'tvshows/:id', to: 'tv_shows#update'
+  delete 'actors/:id', to: 'actors#destroy'
 end
