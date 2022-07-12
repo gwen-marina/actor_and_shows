@@ -6,7 +6,7 @@ RSpec.describe Actor, type: :model do
     it {should have_many :tv_shows}
   end
 
-   describe 'validations' do
+  describe 'validations' do
     it { should validate_presence_of :name }
     it { should validate_presence_of :age}
     it { should allow_value(true).for :still_active}

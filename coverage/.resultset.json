@@ -267,29 +267,21 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/tv_show.rb": {
         "lines": [
           1,
           1,
-          1,
           null,
           1,
           1,
           1,
-          null,
-          1,
-          1,
-          null,
           null,
           1,
           2,
           null,
           null,
           1,
-          null,
-          null,
-          null,
-          null,
+          2,
           null,
           null
         ]
@@ -301,10 +293,15 @@
           null
         ]
       },
-      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/tv_show.rb": {
+      "/Users/gwendolynruiz/turing/2module/1solo_project/actor_and_shows/app/models/actor.rb": {
         "lines": [
           1,
           1,
+          1,
+          null,
+          1,
+          1,
+          1,
           null,
           1,
           0,
@@ -312,11 +309,18 @@
           null,
           1,
           0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1657661804
+    "timestamp": 1657662284
   }
 }
