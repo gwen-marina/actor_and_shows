@@ -32,4 +32,29 @@ it 'can create a new tv show' do
 
     expect(current_path).to eq("/tvshows/#{tv_show_3.id}/edit")
   end
+
+  it 'has a form and button to input number value' do 
+    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+    tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+
+    visit  "/actors/#{actor_1.id}/tvshows"
+
+    fill_in 'number', with: '52'
+    expect(page).to have_button('Only return TV Shows with more than x number of episodes')
+  end
+
+  it 'can show only tv shows with number of episodes more than x' do
+    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+    tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+
+    visit  "/actors/#{actor_1.id}/tvshows"
+
+    fill_in 'number', with: '31'
+    click_button 'Only return TV Shows with more than x number of episodes'
+    
+    expect(page).to have_content(tv_show_1.name)
+    expect(page).to_not have_content(tv_show_2.name)
+  end
 end

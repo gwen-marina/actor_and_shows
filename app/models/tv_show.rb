@@ -12,4 +12,9 @@ class TvShow < ApplicationRecord
   def self.alphabetical_order 
     order(name: :asc)
   end
+
+  def self.greater_than_number(number)
+    #  binding.pry
+    where("number_of_episodes > ?", number) 
+  end
 end

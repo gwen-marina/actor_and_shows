@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-12T14:44:44-07:00">2022-07-12T14:44:44-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-12T15:49:14-07:00">2022-07-12T15:49:14-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="green">
-  97.47%
+      <span class="yellow">
+  87.61%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.01
+         1.02
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>18</b> files in total.
+    <b>21</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>79</b> relevant lines,
-    <span class="green"><b>77</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed. </span>
-    (<span class="green">
-  97.47%
+    <b>113</b> relevant lines,
+    <span class="green"><b>99</b> lines covered</span> and
+    <span class="red"><b>14</b> lines missed. </span>
+    (<span class="yellow">
+  87.61%
 </span>
 )
   </div>
@@ -69,6 +69,39 @@
         </tr>
       </thead>
       <tbody>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#903ea9494624dc186bff35baefad6e5affd4da9d" class="src_link" title="app/controllers/actor_tv_shows_controller.rb">app/controllers/actor_tv_shows_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">92.31 %</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">2.08</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#0166004ffab1bccf9b32f606423dc220dad6cffd" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#3a26585c0bc588cb928892af36c554dbf6b2c66e" class="src_link" title="app/controllers/tv_shows_controller.rb">app/controllers/tv_shows_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">50.00 %</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">0.50</td>
+            
+          </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#576aec686a5320f671146dc1777cd5181091ece5" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
@@ -105,12 +138,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#9a58ab3265aadf42cb5cd68e094ac8628b5a5fb3" class="src_link" title="app/models/tv_show.rb">app/models/tv_show.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">15</td>
+            <td class="yellow strong cell--number t-file__coverage">81.82 %</td>
+            <td class="cell--number">20</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.22</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0.82</td>
             
           </tr>
         
@@ -284,6 +317,715 @@
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="903ea9494624dc186bff35baefad6e5affd4da9d">
+  <div class="header">
+    <h3>app/controllers/actor_tv_shows_controller.rb</h3>
+    <h4>
+      <span class="green">
+  92.31%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>13</b> relevant lines.
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ActorTvShowsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="4">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    @actor = Actor.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="5">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    if params[:alpha] == &quot;yes&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">      @tv_shows = @actor.tv_shows.alphabetical_order</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="7">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    elsif params[:number]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @tv_shows = @actor.tv_shows.greater_than_number(params[:number])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="10">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      @tv_shows = @actor.tv_shows</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    end    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @id = params[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def create </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    TvShow.create(name: params[:name], on_air: params[:on_air],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">                  number_of_episodes: params[:number_of_episodes], actor_id: params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    redirect_to &quot;/actors/#{params[:id]}/tvshows&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0166004ffab1bccf9b32f606423dc220dad6cffd">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>1</b> relevant lines.
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="3a26585c0bc588cb928892af36c554dbf6b2c66e">
+  <div class="header">
+    <h3>app/controllers/tv_shows_controller.rb</h3>
+    <h4>
+      <span class="red">
+  50.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>18</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>9</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class TvShowsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">    @tv_shows = TvShow.all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">    @tv_show = TvShow.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def edit </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @tv_show = TvShow.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def update </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    tv_show = TvShow.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    tv_show.update(tv_show_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    redirect_to &quot;/tvshows/#{tv_show.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def destroy </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">    tv_show = TvShow.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">    tv_show.destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">    redirect_to &#39;/tvshows&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def tv_show_params </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">    params.permit(:name, :on_air, :number_of_episodes)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="576aec686a5320f671146dc1777cd5181091ece5">
   <div class="header">
@@ -690,8 +1432,8 @@
   <div class="header">
     <h3>app/models/tv_show.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  81.82%
 </span>
 
       lines covered
@@ -700,9 +1442,9 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
+      <b>11</b> relevant lines.
       <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -801,8 +1543,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="9">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
             
 
             
@@ -845,8 +1587,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="13">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
             
 
             
@@ -868,6 +1610,61 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.greater_than_number(number)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    #  binding.pry</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    where(&quot;number_of_episodes &gt; ?&quot;, number) </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
