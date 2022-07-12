@@ -22,9 +22,9 @@ RSpec.describe 'the tv show edit', type: :feature do
     visit "/tvshows/#{tv_show_1.id}"
 
     expect(page).to have_content('Breaking Ba')
-    
+  
     click_link 'Edit Breaking Ba'
- 
+    
     fill_in 'Name', with: 'Breaking Bad'
     click_button 'Update TV Show'
 

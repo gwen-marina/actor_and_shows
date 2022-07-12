@@ -20,10 +20,23 @@ RSpec.describe 'tv show index', type: :feature do
 
     visit "/actors/#{actor_1.id}/tvshows"
     
-    expect(page).to have_link('Sort By Alphabetical Order')
+    expect(page).to have_link('Sort TV Shows By Alphabetical Order')
 
-    click_link 'Sort By Alphabetical Order'
+    click_link 'Sort TV Shows By Alphabetical Order'
 
     expect(current_path).to eq("/actors/#{actor_1.id}/tvshows")
+  end
+
+  it 'has a link for every tv show to edit the information' do 
+    actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+    actor_2 = Actor.create!(name: "Bryan Cranston", still_active: true, age: 66)
+    tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+    tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+    tv_show_3 = actor_2.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
+
+    visit '/tvshows'
+
+    click_on(id: "show-#{tv_show_2.id}")
+    expect(current_path).to eq("/tvshows/#{tv_show_2.id}/edit")
   end
 end

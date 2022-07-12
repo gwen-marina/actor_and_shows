@@ -15,7 +15,7 @@ RSpec.describe 'the Actor creation', type: :feature do
     fill_in('name', with: 'Rhea Seehorn')
     fill_in('still_active', with: 'True')
     fill_in('age', with: '48')
-    click_button('Create Actor')
+    click_on ('Create Actor')
 
     expect(current_path).to eq('/actors')
     expect(page).to have_content('Rhea Seehorn')

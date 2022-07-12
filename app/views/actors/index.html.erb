@@ -1,10 +1,11 @@
 <h1>Actors</h1>
-<%= link_to 'New Actor', '/actors/new' %>
+<h4><%= link_to 'New Actor', '/actors/new' %></h4>
 <% @actors.each do |actor| %>
   <h3><%= actor.name %></h3>
   <p>Still Active: <%= actor.still_active %></p>
   <p>Age: <%= actor.age %></p>
   <p>Created At: <%= actor.created_at %></p>
+  <p><%= link_to "Edit #{actor.name}", "/actors/#{actor.id}/edit", id: "actor-#{actor.id}" %></p>  
 <% end %>
 
 
