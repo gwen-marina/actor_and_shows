@@ -34,9 +34,17 @@ RSpec.describe TvShow, type: :model do
       third = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
       second = actor_1.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
 
-      tv_show = TvShow.alphabetical_order
-
       expect(TvShow.alphabetical_order).to eq([first, second, third])
+    end
+
+    it 'can filter tv shows based on number of episodes' do
+      TvShow.destroy_all
+      Actor.destroy_all
+      actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
+      tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
+      tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
+
+      expect(TvShow.greater_than_number(37)).to eq([tv_show_1]) 
     end
   end
 end

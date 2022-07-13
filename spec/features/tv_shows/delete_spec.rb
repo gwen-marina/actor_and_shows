@@ -29,9 +29,9 @@ RSpec.describe 'delete a tv show' do
 
     visit '/tvshows'
 
-    expect(page).to have_link("Delete #{tv_show_2.name}")
+    expect(page).to have_link("Delete #{tv_show_1.name}")
 
-    click_link "Delete #{tv_show_2.name}"
+    click_link "Delete #{tv_show_1.name}"
 
     expect(current_path).to eq('/tvshows')
     expect(page).to_not have_content("Mr. Show")

@@ -14,7 +14,6 @@ class TvShow < ApplicationRecord
   end
 
   def self.greater_than_number(number)
-    #  binding.pry
     where("number_of_episodes > ?", number) 
   end
 end
