@@ -31,7 +31,7 @@ RSpec.describe 'delete an actor', type: :feature do
     expect(page).to have_content(actor_1.name)
     expect(page).to have_content(actor_2.name)
     expect(page).to have_link("Delete #{actor_2.name}")
-
+    
     click_link "Delete #{actor_2.name}"
 
     expect(current_path).to eq('/actors')
