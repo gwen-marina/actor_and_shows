@@ -1,13 +1,30 @@
 <h1>Actors</h1>
-<h3><%= link_to 'New Actor', '/actors/new' %></h3>
+<h3><%= link_to 'New Actor', '/actors/new' %></h3><br>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Still active</th>
+    <th>Age</th>
+    <th>Update</th>
+    <th>Delete</th>
+    <th>TV Shows</th>
+    <th>Created At</th>
+  </tr>
 <% @actors.each do |actor| %>
-  <p><h2><%= actor.name %></h2><strong><%= link_to "Update #{actor.name}", "/actors/#{actor.id}/edit", id: "actor-#{actor.id}" %></strong></p> 
-  <p>Still Active: <%= actor.still_active %></p>
-  <p>Age: <%= actor.age %></p>
-  <p>Created At: <%= actor.created_at %></p>
-  <%# <p><%= link_to "Update #{actor.name}", "/actors/#{actor.id}/edit", id: "actor-#{actor.id}" %>
-  <p><%= link_to "Delete #{actor.name}", "/actors/#{actor.id}", id: "actor-#{actor.id}", method: :delete %></p> 
-<% end %>
+  <tr>
+  <div class="actor-<%=actor.id%>">
+    <td><h4><%= actor.name %></h4></td>
+    <td><%= actor.still_active %></td>
+    <td><%= actor.age %></td>
+    <td><h5><%= link_to "Update #{actor.name}", "/actors/#{actor.id}/edit", id: "actor-#{actor.id}" %></h5></td>
+    <td><h5><%= link_to "Delete #{actor.name}", "/actors/#{actor.id}", id: "actor-#{actor.id}", method: :delete %></h5></td>
+    <td><h5><%= link_to "TV Shows", "/actors/#{actor.id}/tvshows" %></h5></td>
+    <td><%= actor.created_at %></td>
+  </div>
+  </tr>
+  <% end %>
+</table>
+<hr/>
 
 
 
