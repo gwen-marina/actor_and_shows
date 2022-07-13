@@ -1,5 +1,7 @@
 # README
 
+![Schema](https://raw.githubusercontent.com/gwen-marina/actor_and_shows/main/schema.png)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

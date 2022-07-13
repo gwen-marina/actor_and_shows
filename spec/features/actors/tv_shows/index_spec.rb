@@ -28,7 +28,7 @@ it 'can create a new tv show' do
     visit "/actors/#{actor_1.id}/tvshows"
     
     expect(page).to have_link('Sort TV Shows By Alphabetical Order')
-
+    
     click_link 'Sort TV Shows By Alphabetical Order'
 
     expect(current_path).to eq("/actors/#{actor_1.id}/tvshows")
@@ -73,3 +73,8 @@ it 'can create a new tv show' do
     expect(page).to_not have_content(tv_show_2.name)
   end
 end
+
+
+ 
+
+ 
