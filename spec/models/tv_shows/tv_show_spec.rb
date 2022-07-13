@@ -17,7 +17,6 @@ RSpec.describe TvShow, type: :model do
   describe 'class methods' do
     it 'only shows on_air tv shows' do
       TvShow.destroy_all
-      Actor.destroy_all
       actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
       better = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
       mr = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
@@ -28,7 +27,6 @@ RSpec.describe TvShow, type: :model do
   
     it 'can sort an actors tv shows in alphabetical order' do 
       TvShow.destroy_all
-      Actor.destroy_all
       actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
       first = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
       third = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)
@@ -39,7 +37,6 @@ RSpec.describe TvShow, type: :model do
 
     it 'can filter tv shows based on number of episodes' do
       TvShow.destroy_all
-      Actor.destroy_all
       actor_1 = Actor.create!(name: "Bob Odenkirk", still_active: true, age: 59)
       tv_show_1 = actor_1.tv_shows.create!(name: "Better Call Saul", on_air: true, number_of_episodes: 57)
       tv_show_2 = actor_1.tv_shows.create!(name: "Mr. Show", on_air: false, number_of_episodes: 30)

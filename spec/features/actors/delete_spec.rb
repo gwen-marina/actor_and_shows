@@ -28,7 +28,8 @@ RSpec.describe 'delete an actor', type: :feature do
     tv_show_3 = actor_2.tv_shows.create!(name: "Breaking Bad", on_air: false, number_of_episodes: 62)
 
     visit '/actors'
-
+    expect(page).to have_content(actor_1.name)
+    expect(page).to have_content(actor_2.name)
     expect(page).to have_link("Delete #{actor_2.name}")
 
     click_link "Delete #{actor_2.name}"

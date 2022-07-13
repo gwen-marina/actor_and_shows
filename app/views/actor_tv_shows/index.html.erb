@@ -1,20 +1,20 @@
 <h1>TV Shows</h1>
-<p><%= link_to 'Sort TV Shows By Alphabetical Order', "/actors/#{@actor.id}/tvshows?alpha=yes" %></p>
-<h3><%= @actor.name %></h3>
-<p><%= link_to 'Create TV Show', "/actors/#{@actor.id}/tvshows/new" %></p>
+<h4><%= link_to 'Sort TV Shows By Alphabetical Order', "/actors/#{@actor.id}/tvshows?alpha=yes" %></h4>
+<h2><%= @actor.name %></h2>
+<h5><%= link_to 'Create TV Show', "/actors/#{@actor.id}/tvshows/new" %></h5>
 <% @tv_shows.each do |show| %>
-  <p><h3><%= show.name %></h3> <%= link_to "Edit #{show.name}", "/tvshows/#{show.id}/edit", id: "show-#{show.id}" %> </p>
+  <h4><%= show.name %></h4>
   <p>On Air: <%= show.on_air %></p>
-  <p>Number of Episodes: <%= show.number_of_episodes %></p>
-  <%# <p><%= link_to "Edit #{show.name}", "/tvshows/#{show.id}/edit", id: "show-#{show.id}" %> </p> %>
-  <p><%= link_to "Delete #{show.name}", "/tvshows/#{show.id}", id: "show-#{show.id}", method: :delete %></p> 
+  <p>Number of Episodes: <%= show.number_of_episodes %></p> 
+  <h5><%= link_to "Edit #{show.name}", "/tvshows/#{show.id}/edit", id: "show-#{show.id}" %></h5>
+  <h5><%= link_to "Delete #{show.name}", "/tvshows/#{show.id}", id: "show-#{show.id}", method: :delete %></h5> 
 <% end %>
 
 <%= form_with url: "/actors/#{@actor.id}/tvshows", method: :get, local: true do |form| %>
   <%= form.label :number %>
   <%= form.text_field :number %>
 
-  <%= form.submit 'Only return TV Shows with more than x number of episodes' %>
+  <%= form.submit 'Only return TV Shows with more than a certain number of episodes' %>
 <% end %>
 
 

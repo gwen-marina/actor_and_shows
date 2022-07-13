@@ -20,11 +20,11 @@ RSpec.describe 'actor index', type: :feature do
     expect(page).to_not have_content(tv_show_3.name)
   end
 
-  it 'has link to tvshows index at top of page' do
-    visit "/actors"
+  it 'has link to tv shows index at top of page' do
+    visit '/actors'
     expect(page).to have_link('TV Shows')
-    click_link 'TV Shows'
-    expect(current_path).to eq("/tvshows")
+    first(:link, 'TV Shows').click
+    expect(current_path).to eq('/tvshows')
   end 
 
   it 'has a link to create a tv show from the actors tv shows index page' do 
