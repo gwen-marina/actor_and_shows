@@ -51,7 +51,7 @@ RSpec.describe 'actor index', type: :feature do
 
     visit '/actors'
    
-    click_link("Edit #{actor_1.name}")
+    click_link("Update #{actor_1.name}")
     
     expect(current_path).to eq("/actors/#{actor_1.id}/edit")
   end
