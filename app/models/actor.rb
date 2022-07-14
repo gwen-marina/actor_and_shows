@@ -11,13 +11,6 @@ class Actor < ApplicationRecord
   end
 
   def tv_show_count
-     tv_shows.count
+   tv_shows.count
   end
-
-  def actor_tv_shows 
-  end
-
-  # def tv_show_count_filter 
-  #   tv_shows.where("number_of_episodes > ?", number)
-  # end
 end
